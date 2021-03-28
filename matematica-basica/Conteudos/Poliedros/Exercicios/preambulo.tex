@@ -1,0 +1,60 @@
+\usepackage[english,brazilian]{babel}
+\usepackage[alf]{abntex2cite}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[top=25mm, bottom=25mm, left=25mm, right=25mm]{geometry}
+\usepackage{framed}
+\usepackage{booktabs}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{subfigure}
+\usepackage{enumerate}
+\usepackage{float}
+\graphicspath{{./Figuras/}}    
+\definecolor{shadecolor}{rgb}{0.8,0.8,0.8}
+\pagenumbering{arabic}
+\usepackage{cancel}
+
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+
+\usepackage{multicol}
+\columnsep=10mm %Espaçamento entre colunas.
+\setlength{\columnseprule}{1.25pt}
+
+%Cabeçario
+\usepackage{fancyhdr}
+\lhead{\rightmark}
+\renewcommand{\footrulewidth}{0.5pt}
+
+\setlength{\parindent}{1.25cm}%paragrafo
+
+\pagestyle{fancy}
+\def\MakeUppercase{} %Fonte minúscula no cabeçario
+
+\pagenumbering{arabic}
+
+\usepackage{amsthm}
+\newtheorem{problema}{Problema}
+\newtheorem{exercicio}{Exercício}
+
+\usepackage[skip=10pt]{caption}
+\captionsetup{font={stretch=0.4,small}} 
+
+\newcommand{\LINHAHORIZONTAL}{\center \rule{16cm}{1.25pt}}
+
+\newcommand{\frase}{\flushright{\textit{``Há 2 espécies de chatos: os chatos propriamente ditos\\e os amigos, que são os nossos chatos prediletos.''}}\\\textbf{Mario Quintana}}
+\newcommand{\FRASE}{\begin{verse} \frase \end{verse}}
+
+\author{\textbf{Professor Leandro Vieira}\\EREM Regina Pacis\\Palmeirina-PE}
+\date{07 de dezembro de 2020}
+
+%\chead{}
+\title{\LINHAHORIZONTAL \\ \textbf{\\Poliedros: Relação de Euler}\footnote{Resumo para os estudos das aulas presenciais e à distância no período de pandemia para as turmas do 2~EMSI~A, do 2~EMSI~B e do 3~EMSI~A.}\LINHAHORIZONTAL}
+
+\newcommand{\m}[1]{\({#1}\)}
+\newcommand{\M}[1]{\[{#1}\]}
+
+\newcommand{\figura}[2]{\begin{figure}[!hbt]\center\includegraphics[width=#2]{#1}\end{figure}}

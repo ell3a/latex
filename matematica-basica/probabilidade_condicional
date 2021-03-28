@@ -1,0 +1,5 @@
+%Probabilidade Condiocional Usando a Fórmula
+\[P(A vert B) =  \frac{P(A e B)}{P(B)}\]
+
+\begin{enumerate}
+\item Em uma urna há 10 bolas, sendo 6 pretas e 4 brancas. São retiradas sucessivamente e sem reposição duas bolas dessa urna. Qual a probabilidade da primeira bola tirada ter sido branca, sabendo que a segunda é?

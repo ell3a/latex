@@ -1,0 +1,6 @@
+Dos funcionários de uma fábrica, 60\% são homens. Do total das 125 mulheres dessa fábrica, 75\% são casadas. Ao sortear um funcionário dessa fábrica, qual a probabilidade de que seja uma mulher solteira?
+
+Um exame de laboratório tem eficiência de 95% para detectar uma doença quando ela de fato existe. Além disso, o teste aponta um resultado falso positivo para 1% das pessoas sadias testadas (isto quer dizer que o teste erra em 1% dos casos se a pessoa não tem a doença, dando um resultado positivo para a doença). Se 0,5% da população tem a doença, qual é a probabilidade de que uma pessoa, escolhida ao acaso, tenha a doença, sabendo que o seu exame foi positivo?
+
+E uma urna há 10 bolas, sendo 5 azuis e 5 pretas. Ao retirar 2 duas bolas sem reposição, qual a probabilidade da primeira ser preta, uma vez que a segunda é preta.
+

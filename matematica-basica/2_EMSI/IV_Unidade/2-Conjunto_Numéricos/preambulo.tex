@@ -1,0 +1,65 @@
+\usepackage[english,brazilian]{babel}
+\usepackage[alf]{abntex2cite}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[top=15mm, bottom=15mm, left=10mm, right=10mm]{geometry}
+\usepackage{framed}
+\usepackage{booktabs}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{subfigure}
+\usepackage{enumerate}
+\usepackage{float}
+\graphicspath{{./Figuras/}}    
+\definecolor{shadecolor}{rgb}{0.8,0.8,0.8}
+\pagenumbering{arabic}
+\usepackage{cancel}
+
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+
+\usepackage{multicol}
+\setlength{\columnseprule}{0pt}
+
+%Cabeçario
+\usepackage{fancyhdr}
+\lhead{\rightmark}
+\renewcommand{\footrulewidth}{0.5pt}
+
+\setlength{\parindent}{1.25cm}%paragrafo
+
+\pagestyle{fancy}
+\def\MakeUppercase{} %Fonte minúscula no cabeçario
+
+\pagenumbering{arabic}
+
+\usepackage{amsthm}
+\newtheorem{problema}{Problema}
+
+\usepackage[skip=10pt]{caption}
+\captionsetup{font={stretch=0.4,small}} 
+
+\newcommand{\LINHAHORIZONTAL}{\center \rule{16cm}{1.25pt}}
+
+%Conjuntos numéricos
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\R}{\mathbb{R}}
+
+\newcommand{\frase}{\flushright{\textit{``O insucesso é apenas uma oportunidade para recomeçar com mais inteligência.''}}\\\textbf{Thomas Atkinson}}
+\newcommand{\FRASE}{\begin{verse} \frase \end{verse}}
+
+\author{\textbf{Professor Leandro Vieira}\\EREM Regina Pacis\\Palmeirina-PE}
+\date{novembro de 2020}
+
+%\chead{}
+\title{\LINHAHORIZONTAL \\\textbf{Conjuntos Numéricos}\footnote{Notas de aula da quarta unidade para as turmas do 2 EMSI}}
+
+\newcommand{\m}[1]{\({#1}\)}
+\newcommand{\M}[1]{\[{#1}\]}
+\newcommand{\sol}{\noindent \textbf{Solução }}

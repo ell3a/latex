@@ -1,0 +1,47 @@
+A linha de comando deve ser encerrada com um ponto e vı́rgula ou com um cifrão. Se for encerrada com um ponto e vı́rgula, o resultado obtido é mostrado imediatamente. Se for encerrada com um cifrão, o resultado não será mostrado de imediato, ficando guardado internamente.
+
+Podemos atribuir valor a qualquer variável digitando-se o seu nome seguido de dois pontos e do valor da variável como em x : 2, y : 4, z : −1 . . .
+
+O último resultado calculado pode ser referenciado por um sı́mbolo de porcentagem (%).
+
+Usamos o comando float(x) para obtermos a representação decimal de x.
+
+Uma função pode ser definida utilizando-se um :=, como no exemplo f (x) := cos(x)+x/5−3.
+
+Fatorando um número em fatores primos: factor(n)
+
+Fatorando uma expressão: factor(E)
+
+Divisão de polinômios divisão com um divide(f,g). O resultado da divisão é apresentado no formato [q, r] onde q é o quociente e r é o resto da divisão.
+
+Uma equação pode ser resolvida com um comando solve(equação, variável).
+
+O limite de f (x) quando x tende a x0 é calculado com um comando limit(f (x), x, x0).
+Somatórios: sum(f(i), i, i_0, i_f).
+
+Calculo de limites: tlimit(f(x),x,x_0)
+Derivação de funções: diff(f(x),x)
+Integração de funções: integrate(f(x),x)
+
+Resolvendo Sistemas de Equações
+solve([f(x,y),g(x,y)],[x,y])
+linsolve([f(x,y),g(x,y)],[x,y])
+
+
+Plotando funções de uma variável
+plot2d(f(x),[x,x_0,x_f])
+plot3d(f(x,y),[x,x_0,x_f],[y,y_0,y_f])
+
+
+Divisibilidade
+gcd(exp1, exp2,...) - calcula o máximo divisor comum dos seus argumentos.
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+apt install -y texlive-latex-extra
+apt install -y texlive-lang-portuguese
+apt install texlive-fonts-recommended
+apt-get install latex-beamer
+apt-get install -y texlive-extra-utils texlive-generic-extra texlive-lang-portuguese
+apt-get install -y texlive-latex-extra texlive-math-extra texlive-pictures
+apt-get install -y texlive-plain-extra texlive-publishers texlive-science
+apt-get install -y gummi
+apt-get install -y texstudio
+

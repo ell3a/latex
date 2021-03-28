@@ -1,0 +1,56 @@
+\usepackage[english,brazilian]{babel}
+\usepackage[alf]{abntex2cite}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[top=25mm, bottom=25mm, left=25mm, right=25mm]{geometry}
+\usepackage{framed}
+\usepackage{booktabs}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{subfigure}
+\usepackage{enumerate}
+\usepackage{float}
+\graphicspath{{./Figuras/}}    
+\definecolor{shadecolor}{rgb}{0.8,0.8,0.8}
+\pagenumbering{arabic}
+
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+
+\usepackage{multicol}
+\setlength{\columnseprule}{0pt}
+
+%Cabeçario
+\usepackage{fancyhdr}
+\lhead{\rightmark}
+\renewcommand{\footrulewidth}{0.5pt}
+
+\setlength{\parindent}{1.25cm}%paragrafo
+
+\pagestyle{fancy}
+\def\MakeUppercase{} %Fonte minúscula no cabeçario
+
+\pagenumbering{arabic}
+
+\usepackage{amsthm}
+\newtheorem{exemplo}{Exemplo}
+
+\usepackage[skip=10pt]{caption}
+\captionsetup{font={stretch=0.4,small}} 
+
+\newcommand{\LINHAHORIZONTAL}{\center \rule{16cm}{1.25pt}}
+
+\newcommand{\frase}{\flushright{\textit{"As pessoas que são verdadeiramente fortes elevam os outros.\\Pessoas verdadeiramente poderosas unem os outros."}}\\\textbf{Malcolm X}}
+\newcommand{\FRASE}{\begin{verse} \frase \end{verse}}
+
+\author{\textbf{Professor Leandro Vieira}\\EREM Regina Pacis\\Palmeirina-PE}
+\date{13 de julho de 2020}
+
+%\chead{}
+\title{\LINHAHORIZONTAL \\\textbf{Função Quadrática}\footnote{Resumo para os estudos da décima quarta aula no período de quarentena para as turmas do 2 EMSI A e do 2 EMSI B}}
+
+\newcommand{\m}[1]{\({#1}\)}
+\newcommand{\M}[1]{\[{#1}\]}
+\newcommand{\sol}{\noindent \textbf{Solução }}

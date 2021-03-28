@@ -1,0 +1,71 @@
+\documentclass[12pt,a4paper]{article}
+
+\input{preambulo}
+
+\begin{document}
+
+\section{Definição}
+
+Os poliedros podem ser definidos de várias formas, com maior ou menor generalidades. A definição de poliedro ao longo da história não foi unânime. Euler que enunciou o importante teorema que relaciona o número de vértices faces e arestas de um poliedro não deu uma definição para esses objetos.
+
+Poliedro é a reunião de um número finito de polígonos planos, denominados faces, de modo que:
+
+\begin{enumerate}[(a)]
+\item Cada lado de um desses polígonos é também lado de um, e apenas um outro polígono. (Os lados dos polígonos que compõem o poliedro são denominados as arestas do poliedro)
+\item A interseção de duas faces quaisquer ou é um lado comum, ou é um vértice, ou é vazia. (Os vértices dos polígonos que compõem o poliedro são denominados os vértices do poliedro)
+\item ir, sobre o poliedro, de um ponto de uma face a um ponto de qualquer outra, sem passar por nenhum vértice (ou seja, cruzando apenas arestas).
+\end{enumerate}
+
+Condições para que três números naturais: \m{V}, \m{F} e \m{A} sejam respectivamente o número de vértices, faces e arestas de um poliedro
+\begin{enumerate}[I -]
+\item \m{F \geq 6};
+\item \m{V-A+F = 2};
+\item \m{A + 6 \leq 3F \leq 2A};
+\item \m{A + 6 \leq 3V \leq 2A}.
+\end{enumerate}
+
+Famílias de poliedros primitivos
+\begin{enumerate}[(i)]
+\item \m{(4,6,4)}, tetraedro;
+\item \m{(5,8,5)}, pirâmide de base quadrangular;
+\item \m{(6,10,6)};
+\end{enumerate}
+
+Transformações de poliedros: \m{(2,3,1)} e \m{(1,3,2)}.
+\M{(V,A,F) = (V',A',F')+x(2,3,1)+y(1,3,2)}
+
+\begin{eqnarray}
+d & = & \sqrt{4^2+4^2}\\
+d & = & 4\sqrt{2} \\
+x^2 + (2\sqrt{2})^2 & = & 4^2 \\
+x^2 + 8 & = & 16 \\
+x & = & 2\sqrt{2}
+\end{eqnarray}
+
+\newpage
+\section{Geometria Plana}
+
+\begin{exemplo}
+Na Figura~\ref{quadrado1}, \m{ABCD} é um quadrado, a medida do ângulo \m{ABE} é \m{20^{\circ}} e
+\m{BE = BC}. Qual é a medida do ângulo \m{DFC}?
+
+\begin{figure}[!ht]
+\center
+\includegraphics[height=8cm]{Figuras/ex1}
+\caption{}
+\label{quadrado1}
+\end{figure}
+
+
+\end{exemplo}
+
+%\begin{figure}[!ht]
+%\center
+%\subfigure[ref1][Tales]{\includegraphics[height=5cm]{Figuras/Tales_de_Mileto}}
+%\qquad
+%\qquad
+%\subfigure[ref2][Localização de Mileto]{\includegraphics[height=5cm]{Figuras/Mileto}}
+%\caption{}
+%\end{figure}
+
+\end{document}

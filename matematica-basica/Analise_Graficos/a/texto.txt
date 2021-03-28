@@ -1,0 +1,25 @@
+https://brasilemsintese.ibge.gov.br/
+http://mapasinterativos.ibge.gov.br/densidade/
+https://educa.ibge.gov.br/professores/educa-recursos/20773-tipos-de-graficos-no-ensino.html
+
+
+
+colunas
+
+O gráfico de colunas é composto por duas linhas ou eixos, um vertical e outro horizontal (lembra do Plano Cartesiano? Sempre utilizamos o primeiro quadrante do Plano Cartesiano).
+
+No eixo horizontal, são construídas as colunas que representam a variação (medidas ou quantidades numéricas) dos dados na pesquisa realizada. O fluxo de informações, representado por um valor numérico, é indicado pelo eixo vertical.
+
+Ou seja, no eixo vertical indicamos uma escala graduada de zero até o valor máximo que queremos representar e no eixo horizontal construímos colunas onde a altura de cada coluna informa o valor máximo pesquisado em cada item.
+
+As colunas devem sempre possuir a mesma largura e a distância entre elas deve ser constante. Também podemos representar duas ou mais categorias de informações.
+
+barras
+
+O gráfico de barras também é construído sobre o Plano Cartesiano (primeiro quadrante).
+
+No eixo vertical, são construídas as barras que representam a variação (medidas ou quantidades numéricas) dos dados na pesquisa realizada. O fluxo de informações, representado por um valor numérico, é indicado pelo eixo horizontal.
+
+As barras devem sempre possuir a mesma largura e a distância entre elas deve ser constante. Podemos representar duas ou mais categorias de informações.
+
+
