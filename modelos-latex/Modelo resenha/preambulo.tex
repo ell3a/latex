@@ -1,0 +1,49 @@
+% ---------------- Para Modificar ----------------
+\date{}
+\usepackage{lipsum}
+\usepackage{setspace} % Espaçamento
+
+%-------------------------------------------------
+\usepackage[english,brazilian]{babel}
+\usepackage[alf]{abntex2cite}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{framed,booktabs,color,hyperref,graphicx}
+\usepackage{amsfonts,amsthm,cancel}
+\usepackage{subfigure,enumerate,float}
+  
+\definecolor{shadecolor}{rgb}{0.8,0.8,0.8}
+\pagenumbering{arabic}
+
+% Colunas
+\usepackage{multicol}
+\columnsep=10mm %Espaçamento entre colunas.
+\setlength{\columnseprule}{1pt}
+
+% Cabeçalho
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\cabeca}
+\rhead{}
+\renewcommand{\headrulewidth}{1pt} % espessura da linha do cabeçalho
+\renewcommand{\footrulewidth}{1pt} % espessura da linha do rodapé
+
+% Parágrafo
+\setlength{\parindent}{1.25cm}
+
+\newtheorem{problema}{Problema}
+\newtheorem{exercicio}{exercicio}
+\newtheorem{exemplo}{Exemplo}
+\newtheorem{questao}{Questão}
+
+\usepackage[skip=10pt]{caption}
+\captionsetup{font={stretch=0.4,small}}
+
+
+\newcommand{\linha}{\center \rule{16cm}{1.25pt}}
+
+\title{\begin{flushright} \textbf{ \titulo} \end{flushright}\linha}
+
+\author{\autor}
+
+\newcommand{\frase}{\begin{verse} \flushright{\FRASE} \end{verse}}

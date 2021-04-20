@@ -1,0 +1,62 @@
+\documentclass[oneside,a4paper,12pt]{article}
+\usepackage[top=3cm, bottom=2cm, left=3cm, right=2cm]{geometry}
+
+% Aqui você coloca o título
+\newcommand{\titulo}{Revisão de Matemática de matemática revisão revisão}
+% Aqui você coloca o autor
+\newcommand{\autor}{Leandro Vieira dos Santos}
+% Aqui Você coloca o cabeçalho se presisar
+\newcommand{\cabeca}{}
+
+\input{preambulo.tex}
+
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\begin{document}
+\onehalfspacing
+
+\maketitle
+
+\begin{center} \fbox{ \begin{minipage}{14cm}\begin{center}
+% Aqui você coloca a referência da obra
+Nome da Obra    
+\end{center} \end{minipage} } \end{center}
+
+\vspace{5pt}
+
+\section*{Primeiro Título}
+\lipsum[1-2]
+
+\section*{Segunto Título}
+\lipsum[2-3]
+
+\section*{Segundo Título}
+\lipsum[4-5]
+
+\section*{Terceiro Título}
+\lipsum[6-7]
+
+% Isso aqui serve para criar um espaçamento
+% É só alterar o valor
+\vspace{10pt}
+
+% Aqui você coloca seus dados à esquerda
+\begin{flushleft}
+Universidade
+
+Disciplina
+
+nome
+\end{flushleft}
+
+% Aqui você coloca seus dados à esquerda
+\begin{flushright}
+    Universidade
+
+    Disciplina
+    
+    nome        
+\end{flushright}
+
+\end{document}
