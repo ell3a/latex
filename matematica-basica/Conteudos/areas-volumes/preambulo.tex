@@ -1,0 +1,60 @@
+% ---------------- Para Modificar ---------------- 
+\newcommand{\principal}{Volumes}
+\newcommand{\conteudo}{}
+\newcommand{\turmas}{3~EMSI~A e do 3~EMSI~B}
+
+\date{abril de 2021}
+
+\newcommand{\citacao}{Que nada nos defina. Que nada nos sujeite. Que a liberdade seja a nossa própria substância.}
+\newcommand{\autorcitacao}{Simone de Beauvoir}
+% ------------------------------------------------
+
+%-------------------------------------------------
+\usepackage[english,brazilian]{babel}
+\usepackage[alf]{abntex2cite}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[top=15mm, bottom=15mm, left=10mm, right=10mm]{geometry}
+\usepackage{framed,booktabs,color,hyperref,graphicx}
+\usepackage{amsfonts,amsthm,cancel}
+\usepackage{subfigure,enumerate,float}
+  
+\definecolor{shadecolor}{rgb}{0.8,0.8,0.8}
+\pagenumbering{arabic}
+
+% Colunas
+\usepackage{multicol}
+\columnsep=10mm %Espaçamento entre colunas.
+\setlength{\columnseprule}{1pt}
+
+% Cabeçalho
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\textbf{\principal}}
+\rhead{}
+\renewcommand{\headrulewidth}{1pt} % espessura da linha do cabeçalho
+\renewcommand{\footrulewidth}{1pt} % espessura da linha do rodapé
+
+% Parágrafo
+\setlength{\parindent}{1.25cm}
+
+\newtheorem{problema}{Problema}
+\newtheorem{exercicio}{exercicio}
+\newtheorem{exemplo}{Exemplo}
+\newtheorem{questao}{Questão}
+
+\usepackage[skip=10pt]{caption}
+\captionsetup{font={stretch=0.4,small}}
+
+\newcommand{\FRASE}{\textit{``\citacao ''}\\(\textbf{\autorcitacao})}
+
+\title{\LINHAHORIZONTAL \\\textbf{\\ \principal}\footnote{Resumo para os estudos das aulas não presenciais no período de quarentena para as turmas do \turmas .}\\\LINHAHORIZONTAL}
+
+\newcommand{\LINHAHORIZONTAL}{\center \rule{16cm}{1.25pt}}
+\newcommand{\sol}{\textbf{Solução}}
+
+\newcommand{\m}[1]{\(\displaystyle {#1}\)}
+\newcommand{\M}[1]{\[{#1}\]}
+
+\author{\textbf{Professor Leandro Vieira}\\EREM Regina Pacis\\Palmeirina-PE}
+\newcommand{\frase}{\begin{verse} \flushright{\FRASE} \end{verse}}

@@ -1,0 +1,110 @@
+\documentclass[twocolumn,oneside,a4paper,12pt]{article}
+\input preambulo.tex
+
+%\begin{figure}[!htb]
+%\center
+%\includegraphics[width=15cm]{capa}
+%\end{figure}
+
+\begin{document}
+
+\maketitle
+
+\section*{Sistemas \m{2 \times 2}}
+
+Seja o sistema a seguir:
+
+\begin{equation*}
+  \left\{ \begin{aligned}
+      2x - 5y & = -7 \\
+      7x + 4y & = 8 
+  \end{aligned} \right.
+\end{equation*}
+
+\noindent Podemos transformá-lo na seguinte equação matricial:
+
+\M{A \times X = C,}
+
+\noindent onde 
+
+\M{
+A = \begin{bmatrix}
+   2 & -5  \\
+   7 & 4 
+  \end{bmatrix},
+\mbox{ }  
+X = \begin{bmatrix}
+   x   \\
+   y 
+  \end{bmatrix} 
+\mbox{ e }
+C = \begin{bmatrix}
+   -7   \\
+   8 
+  \end{bmatrix}
+}
+
+Multiplicando a equação matricial \m{A \times X = C} à esquerda por \m{A^{-1}}, obtemos:
+\begin{eqnarray*}
+A^{-1} \times (A \times X) & = & A^{-1} \times C \\
+(A^{-1} \times A) \times X & = & A^{-1} \times C \\
+I \times X & = & A^{-1} \times C \\
+X & = & A^{-1} \times C
+\end{eqnarray*}
+
+\noindent Dessa forma a resolução do sistema passar a ser uma questão de multiplicação de matrizes, sabendo a inversa da matrix \m{A}:
+
+\M{
+A^{-1} = \begin{bmatrix}
+   \frac{4}{43} & \frac{5}{43}  \\
+   -\frac{7}{43} & \frac{2}{43} 
+  \end{bmatrix}
+}
+
+\noindent E portanto
+
+\M{
+X = \begin{bmatrix}
+   \frac{4}{43} & \frac{5}{43}  \\
+   -\frac{7}{43} & \frac{2}{43} 
+  \end{bmatrix} \times \begin{bmatrix}
+   -7   \\
+   8 
+  \end{bmatrix} = \begin{bmatrix}
+   \frac{12}{43}   \\
+   \frac{65}{43} 
+  \end{bmatrix}
+}
+
+Outro exemplo de sistema que resolveremos como a anterior vem a seguir:
+
+\begin{equation*}
+  \left\{ \begin{aligned}
+      3x + 4y - 5z & = 37 \\
+      8x - 6y + 9z & = -12 \\
+      -11x + 146y + 2z & = -7
+  \end{aligned} \right.
+\end{equation*}
+
+\noindent que pode ser analisado como a seguinte equação matricial:
+
+\M{A \times X = C}
+\M{
+\begin{bmatrix}
+   3 & 4 & -5 \\
+   8 & -6 & 9 \\
+   -11 & 14 & 2
+\end{bmatrix} \times \begin{bmatrix}
+   x \\
+   y \\
+   z 
+  \end{bmatrix} = \begin{bmatrix}
+   37 \\
+   -12 \\
+   -7
+  \end{bmatrix}
+}
+
+
+
+\end{document}

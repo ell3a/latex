@@ -1,0 +1,234 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[T1]{fontenc} % dofificação da fonte em 8-bits
+\usepackage[utf8]{inputenc} % acentuação direta
+\usepackage[brazil]{babel} % em portugues brasileiro
+
+% regra de hifenizaÃ§Ã£o das palavras nao acentuadas:
+% nao requer \usepackage[T1]{fontenc}
+\hyphenation{li-vro tes-te cha-ve bi-blio-te-ca}
+% regra de hifenizaÃ§Ã£o das palavras acentuadas:
+% requer \usepackage[T1]{fontenc}
+\hyphenation{comentário}
+
+\usepackage{amsfonts}
+\usepackage{amssymb} 
+%-----------------------------------------------------------------
+\usepackage{amscd}
+% diagrama comutativa
+%-----------------------------------------------------------------
+% eucal troca a fonte mathcal pela fonte caligrafica
+% Euler Script que eh mais enfeitada que do
+% computer Modern
+\usepackage{eucal}
+% a opcao mathscr mantem a versao original do mathcal e 
+% cria o comando mathscr para Euler Script.
+% \usepackage[mathscr]{eucal}
+% nota: \usepackage{eucal} e mesmo que 
+%   \usepackage[eucal]{euscript}
+%   e \usepackage[mathscr]{euscript} e mesmo que
+%   \usepackage[mathscr]{euscript}
+%----------------------------------------------------------------
+% amsmath carrega diversos pacotes do AMS para incrementar
+% o ambiente matematico
+% Os pacotes amssymb e amsmath sao mais usados
+\usepackage{amsmath}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\Rset}{\mathbb{R}}
+\newcommand{\Cset}{\mathbb{C}}
+\newcommand{\Qset}{\mathbb{Q}}
+\newcommand{\Iset}{\mathbb{I}}
+\newcommand{\Zset}{\mathbb{Z}}
+\newcommand{\Nset}{\mathbb{N}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% amsmath oferece \DeclaremathOperator para 
+% definir comandos associados as funcoes matematicas
+% \newcommand{\sen}{\mathrm{sen}}
+\DeclareMathOperator{\sen}{sen} % mesmo efeito
+% do \newcommand acima
+% A versÃ£o com * define como estilo
+% \sum, \lim, \sup, \inf, etc, isto eh,
+% no modo displaystyle, poderÃ¡ coocar limitantes
+% emcima e embaixo
+\DeclareMathOperator*{\supinf}{sup\,inf} % limitante como
+% no \sum
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document} % inicio do documento
+
+Um matrix pode ser criado com o uso do ambiente \verb+matrix+. 
+O separador da coluna Ã©
+
+\& e o separador da linha Ã© \verb|\\| (newline).
+
+\[
+  \begin{matrix}
+   1 & 2 & 3 \\
+   2 & 3 & 4 \\
+   3 & 4 & 5  
+  \end{matrix}
+\]
+
+Para matrizes com delimitadores, existem os comandos que colocam automaticamente
+os delimitadores ajustÃ¡veis: 
+\verb+pmatrix+ (parenteses), \verb+bmatrix+ (colchetes), 
+\verb+Bmatrix+ (chaves), \verb+vmatrix+ (linha vertical), \verb+Vmatrix+ (linha vertical dupla):
+
+\[
+  \begin{matrix}
+   1 & 2 & 3 \\
+   2 & 3 & 4 \\
+   3 & 4 & 5  
+  \end{matrix},
+  \begin{pmatrix}
+   1 & 2 & 3 \\
+   2 & 3 & 4 \\
+   3 & 4 & 5  
+  \end{pmatrix}, 
+  \begin{bmatrix}
+   1 & 2 & 3 \\
+   2 & 3 & 4 \\
+   3 & 4 & 5  
+  \end{bmatrix}, 
+  \begin{Bmatrix}
+   1 & 2 & 3 \\
+   2 & 3 & 4 \\
+   3 & 4 & 5  
+  \end{Bmatrix}, 
+  \begin{vmatrix}
+   1 & 2 & 3 \\
+   2 & 3 & 4 \\
+   3 & 4 & 5  
+  \end{vmatrix},
+  \begin{Vmatrix}
+   1 & 2 & 3 \\
+   2 & 3 & 4 \\
+   3 & 4 & 5  
+  \end{Vmatrix}
+\]
+
+Para quebrar uma equaÃ§Ã£o em mais de uma linha, podemos usar o ambiente \verb+split+.
+
+\[
+\begin{split}
+2x+y=3 \\
+x-y=1+a
+\end{split}
+\]
+
+Para criar alinhamento na equaÃ§Ã£o quebrada, usa-se 
+\verb|aligned| em vez de \verb|split| e insere o \& nos pontos de alinhamento.
+
+\begin{equation}
+\begin{aligned}
+2x+y&=3 \\
+x-y&=1+a
+\end{aligned}
+\end{equation}
+
+
+Para definir a funÃ§Ã£o por partes, Ã© Ãºtil usar o ambiente \verb+cases+:
+
+\[
+f(x) = 
+  \begin{cases}
+      x^2, & x<0 \\
+      x, & x \geq 0 
+  \end{cases}
+\]
+
+Podemos tentar usar tambm para definir sistema de equaes como
+\begin{equation}
+  \begin{cases}
+      2x+y=1 \\
+      x-y=1+a 
+  \end{cases}
+\end{equation}
+mas isto nÃ£o efetua o alinhamento (na posiÃ§Ã£o de igualdade). 
+NÃ£o podemos usar o  \& pois o alinhamento seria efetuado de forma 
+prÃprio para colocar condiÃ§Ã£o da expressÃ£o e nÃ£o a equaÃ§Ã£o.
+Assim, Ã© aconselhÃ¡vel usar o \verb+aligned+ em vez de \texttt{cases}.
+
+\begin{equation}
+  \left\{ \begin{aligned}
+      2x+y&=1 \\
+      x-y&=1+a 
+  \end{aligned} \right.
+\end{equation}
+
+Existem diversos ambientes estilo \texttt{equations}. 
+Vamos ver algumas delas:
+
+O ambiente \texttt{gather} produz ves, todas centradas:
+
+\begin{gather}
+x+y+z=1 \\
+x-y+z=2 \\
+x+y=0
+\end{gather}
+
+Para inibir enumeraÃ§Ã£o em algumas delas, coloque o \verb|\nonumber| na equaÃ§Ã£o
+ue deseja remover a enumeraÃ§Ã£o (antes da quebra de linhas).
+
+\begin{gather}
+x+y+z=1 \\
+x-y+z=2 \nonumber \\
+x+y=0
+\end{gather}
+
+Para equas em vÃrias linhas, com pontos de alinhamento, 
+usa-se o \texttt{align} que pode inibir enumeraÃ 
+de algumas equaes como em \texttt{gather}
+
+\begin{align}
+x+y+z&=1 \\
+x-y+z&=2 \nonumber \\
+x+y&=0
+\end{align}
+
+Quando escreve uma expressÃ£o grande quebrado em vÃ¡rias linhas,
+as vezes Ã© legal tabular cada linha para direita.
+Este efeito pode ser obtido pelo \verb|multline|.
+
+\begin{multline}
+Ax+Ay+Az=
+  a_{11}x_1+\cdots +a_{1n}x_n+\cdots +\cdots +a_{n1}x_1+\cdots a_{nn}x_n    \\
+  a_{11}y_1+\cdots +a_{1n}y_n+\cdots +\cdots +a_{n1}y_1+\cdots a_{nn}y_n    \\
+  a_{11}z_1+\cdots +a_{1n}z_n+\cdots +\cdots +a_{n1}z_1+\cdots a_{nn}z_n    
+\end{multline}
+
+
+Para mais ambientes deste estilo, consulte o manual de AMS \LaTeX.
+
+Note que, todos ambientes do estilo \texttt{equation} 
+(\texttt{equation}, \texttt{gather}, \texttt{align}, \texttt{multline}, etc)
+apresenta a versÃ£o com * na qual remove toda enumeraÃ§Ã£o (versÃ£o * equivale 
+a colocar \verb|\nonumber| em todas).
+
+\begin{align*}
+x+y+z&=1 \\
+x-y+z&=2 \\
+x+y&=0
+\end{align*}
+
+Como exercÃ­cio, tente referÃnciar as equaÃs enumeradas produzidas pelos ambientes acima,
+(usando \verb|\label{}| e \verb|\ref{}|).
+
+\
+
+\textbf{ObservaÃ§Ã£o:} O \texttt{eqnarray} oferecido pelo \LaTeX{} inclui 
+espaÃ§o extra nos pontos de alinhamento e portanto, 
+deve ser evitados.
+Observe o espaÃ§o extra antes e depois de $=$ no \texttt{eqnarray} que segue.
+
+\begin{eqnarray*}
+x+y+z&=&1 \\
+x-y+z&=&2 \\
+x+y&=&0
+\end{eqnarray*}
+
+
+\end{document} % final do documento
